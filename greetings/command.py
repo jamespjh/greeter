@@ -10,9 +10,9 @@ def process():
    parser.add_argument('family')
 
    arguments= parser.parse_args()
-
-   print(greet(arguments.personal, arguments.family, 
-               arguments.title, arguments.polite))
+   message = greet(arguments.personal, arguments.family, 
+               arguments.title, arguments.polite)
+   print(message)
 
 if __name__ == "__main__":
     process()
