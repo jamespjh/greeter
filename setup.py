@@ -8,4 +8,3 @@ setup(
         'console_scripts': [
             'greet = greetings.command:process'
         ]})
-)
