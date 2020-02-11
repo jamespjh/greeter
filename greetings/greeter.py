@@ -1,6 +1,4 @@
-
 def greet(personal, family, title="", polite=False):
-
     """ Generate a greeting string for a person.
 
     Parameters
@@ -18,11 +16,17 @@ def greet(personal, family, title="", polite=False):
     -------
     string
         An appropriate greeting
+
+    Examples
+    --------
+    >>> from greetings.greeter import greet
+    >>> greet("Terry", "Jones")
+    'Hey, Terry Jones.
     """
 
-    greeting= "How do you do, " if polite else "Hey, "
+    greeting = "How do you do, " if polite else "Hey, "
     if title:
-        greeting+=title+" "
+        greeting += f"{title} "
 
-    greeting+= personal + " " + family +"."
+    greeting += f"{personal} {family}."
     return greeting
